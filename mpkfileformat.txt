@@ -1,0 +1,14 @@
+magic number - 4 bytes
+version - 4 bytes
+entries - 8 bytes
+
+skip 0x40 bytes for start of TOC
+compress flag - 4 bytes
+id of file - 4 bytes
+offset for binary data in file - 8 bytes
+filesize compressed - 8 bytes
+filesize uncompressed - 8 bytes
+filename - read till null terminated?
+
+---
+remaining file data is the actual data of the files stored in the MPK file
